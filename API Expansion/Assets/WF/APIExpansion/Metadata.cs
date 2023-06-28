@@ -1,4 +1,4 @@
-﻿namespace WF.LibraryExpansion
+﻿namespace WF.APIExpansion
 {
     public static class Metedata
     {

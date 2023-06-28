@@ -28,6 +28,15 @@ public class Reactive<T>
     }
 
     /// <summary>
+    /// Removes hook function from registered hooks.
+    /// </summary>
+    /// <param name="hook"></param>
+    public void Unregister(Action<T> hook)
+    {
+        registeredHooks.Remove(hook);
+    }
+
+    /// <summary>
     /// Returns element.
     /// Modiying a returned reference will not notify registered hooks.
     /// Only assignments though Set() will trigger a notification on registered hooks.

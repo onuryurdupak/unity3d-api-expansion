@@ -54,8 +54,17 @@ public class ReactiveList<T>
     }
 
     /// <summary>
+    /// Removes hook function from registered hooks.
+    /// </summary>
+    /// <param name="hook"></param>
+    public void Unregister(Action<EventData<T>> hook)
+    {
+        registeredHooks.Remove(hook);
+    }
+
+    /// <summary>
     /// Returns element at index.
-    /// Modiying a returned reference will not notify registered hooks.
+    /// Modifying the returned reference will not trigger notification on registered hooks.
     /// Only assignments though Set() will trigger a notification on registered hooks.
     /// </summary>
     /// <param name="index"></param>
@@ -120,7 +129,7 @@ public class ReactiveList<T>
 
         EventData<T> eventData = new()
         {
-            Data = default, // No need notify about removed data.
+            Data = default,
             OpType = ListOpType.Remove,
             TargetIndex = index,
         };
@@ -136,7 +145,7 @@ public class ReactiveList<T>
         reactiveValue.RemoveAt(index);
         EventData<T> eventData = new()
         {
-            Data = default, // No need notify about removed data.
+            Data = default,
             OpType = ListOpType.Remove,
             TargetIndex = index,
         };

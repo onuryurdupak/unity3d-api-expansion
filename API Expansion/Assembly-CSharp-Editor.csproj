@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1FB0302D-1EFF-52FF-2B1A-5F8FCB16AE8F}</ProjectGuid>
+    <ProjectGuid>{ACB023A8-7FCB-6422-E962-FE679C498A0D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -58,7 +58,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\WF\LibraryExpansion\Editor\ReadOnlyDrawer.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Editor\ReadOnlyDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -805,7 +805,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{83AD214A-3C06-BA8E-09A7-5777C59764DC}</Project>
+      <Project>{6A2EF723-9F63-882B-C47D-83171DAA31D9}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

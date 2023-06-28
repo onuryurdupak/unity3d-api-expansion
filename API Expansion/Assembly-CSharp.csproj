@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{83AD214A-3C06-BA8E-09A7-5777C59764DC}</ProjectGuid>
+    <ProjectGuid>{6A2EF723-9F63-882B-C47D-83171DAA31D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,21 +58,21 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\WF\LibraryExpansion\Extensions\PhysicsExtensions.cs" />
     <Compile Include="Assets\Scripts\Sample.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Extensions\ColorExtensions.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\EventSystems\ReactiveList.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\EventSystems\Reactive.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Common\ReadOnlyDictionary.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Extensions\LogicExtensions.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Metadata.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Extensions\MathExtensions.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Common\MonoBehaviourPlus.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Common\ReadOnlyArray.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Extensions\MaterialExtensions.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Extensions\CollectionExtensions.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\Common\Reference.cs" />
-    <Compile Include="Assets\WF\LibraryExpansion\EditorUtility\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Common\ReadOnlyDictionary.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Metadata.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Common\Reference.cs" />
+    <Compile Include="Assets\WF\APIExpansion\EventSystems\ReactiveList.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Extensions\PhysicsExtensions.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Common\MonoBehaviourPlus.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Extensions\LogicExtensions.cs" />
+    <Compile Include="Assets\WF\APIExpansion\EventSystems\Reactive.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Extensions\MaterialExtensions.cs" />
+    <Compile Include="Assets\WF\APIExpansion\EditorUtility\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Extensions\ColorExtensions.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Extensions\MathExtensions.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Extensions\CollectionExtensions.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Common\ReadOnlyArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

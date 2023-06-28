@@ -82,7 +82,6 @@ public static class PhysicsExtensions
 
         bool targetReached = false;
 
-        // To prevent overshooting final position.
         if (amount > diff)
         {
             amount = diff;
