@@ -26,6 +26,10 @@ public class MonoBehaviourPlus : MonoBehaviour
         }
 
         object foundComponent = GetComponent<T>();
+
+        if (foundComponent == default)
+            return default;
+
         cachedComponents.Add(foundComponent);
         return (T)foundComponent;
     }
@@ -46,6 +50,10 @@ public class MonoBehaviourPlus : MonoBehaviour
         }
 
         object foundObject = FindObjectOfType<T>();
+
+        if (foundObject == default)
+            return default;
+
         cachedObjects.Add(foundObject);
         return (T)foundObject;
     }
