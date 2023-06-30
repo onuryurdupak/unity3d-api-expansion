@@ -79,6 +79,14 @@ Enables having observable data containers.
 
 `public static Color SubtractExceptAlpha(this Color sourceColor, Color other)`
 
+`public static Color SetR(this Color color, float r)`
+
+`public static Color SetG(this Color color, float g)`
+
+`public static Color SetB(this Color color, float b)`
+
+`public static Color SetA(this Color color, float a)`
+
 ---
 
 More of syntactic sugar. Can help long list of combined condition checks be more readable.
