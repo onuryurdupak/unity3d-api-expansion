@@ -89,7 +89,7 @@ Enables having observable data containers.
 
 ---
 
-More of syntactic sugar. Can help long list of combined condition checks be more readable.
+More of a syntactic sugar. Can help long list of combined condition checks be more readable.
 
 `public static bool MultipleAnd(this bool[] arr)`
 
