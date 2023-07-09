@@ -19,10 +19,6 @@ In case of class name collisions, scripts can be manually put into a namespace.
 
 New base class to derive custom components from.
 
-`public T CompCache<T>()`: Makes a GetComponent<T> call and caches the result for future reuse. Consequent calls for same type will return cached component instance.
-
-`public T SceneCache<T>()`: Makes a FindObjectOfType<T> call and caches the result for future reuse. Consequent calls for same type will return cached component instance.
-
 `protected Coroutine DoAfterFrames(int frameCount, Action action)`: Fires input action after input frame count has passed.
 
 `protected Coroutine DoAfterDuration(float seconds, Action action)`: Fires input action after input time in seconds has passed.

@@ -1,63 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-using Object = UnityEngine.Object;
 
 public class MonoBehaviourPlus : MonoBehaviour
 {
-    HashSet<object> cachedComponents = new();
-    HashSet<object> cachedObjects = new();
-
-    /// <summary>
-    /// Retrieves component of input type from game object's immediate components.
-    /// Caches it for future use.
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public T CompCache<T>()
-    {
-        bool exists = cachedComponents.TryGetValue(typeof(T), out object actualVal);
-
-        if (exists)
-        {
-            return (T)actualVal;
-        }
-
-        object foundComponent = GetComponent<T>();
-
-        if (foundComponent == default)
-            return default;
-
-        cachedComponents.Add(foundComponent);
-        return (T)foundComponent;
-    }
-
-    /// <summary>
-    /// Retrieves component of input type from scene.
-    /// Caches it for future use.
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public T SceneCache<T>() where T : Object
-    {
-        bool exists = cachedObjects.TryGetValue(typeof(T), out object actualVal);
-
-        if (exists)
-        {
-            return (T)actualVal;
-        }
-
-        object foundObject = FindObjectOfType<T>();
-
-        if (foundObject == default)
-            return default;
-
-        cachedObjects.Add(foundObject);
-        return (T)foundObject;
-    }
-
     /// <summary>
     /// Executes action after input frame counts pass.
     /// </summary>
