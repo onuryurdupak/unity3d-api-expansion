@@ -127,6 +127,22 @@ Makes Vecto3, Vector2, Quaternion modifications easier by allowing you to modify
 
 `public static Vector2 SetY(this Vector2 input, float amount)`
 
+`public static Vector2 LimitMaxX(this Vector2 input, float max)`
+
+`public static Vector2 LimitMinX(this Vector2 input, float min)`
+
+`public static Vector3 LimitMaxX(this Vector3 input, float max)`
+
+`public static Vector3 LimitMinX(this Vector3 input, float min)`
+
+`public static Vector3 LimitMaxY(this Vector3 input, float max)`
+
+`public static Vector3 LimitMinY(this Vector3 input, float min)`
+
+`public static Vector3 LimitMaxZ(this Vector3 input, float max)`
+
+`public static Vector3 LimitMinZ(this Vector3 input, float min)`
+
 `public static Quaternion AddDegreesX(this Quaternion quaternion, float angles)`
 
 `public static Quaternion AddDegreesY(this Quaternion quaternion, float angles)`
