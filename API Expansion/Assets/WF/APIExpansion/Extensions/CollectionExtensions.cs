@@ -11,9 +11,7 @@ public static class CollectionExtensions
         for (int i = n - 1; i > 0; i--)
         {
             int j = random.Next(i + 1);
-            T temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
+            (array[j], array[i]) = (array[i], array[j]);
         }
     }
 
@@ -23,9 +21,7 @@ public static class CollectionExtensions
         for (int i = n - 1; i > 0; i--)
         {
             int j = random.Next(i + 1);
-            T temp = list[i];
-            list[i] = list[j];
-            list[j] = temp;
+            (list[j], list[i]) = (list[i], list[j]);
         }
     }
 
