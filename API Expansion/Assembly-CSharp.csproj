@@ -79,6 +79,7 @@
     <Compile Include="Assets\WF\APIExpansion\Extensions\LogicExtensions.cs" />
     <Compile Include="Assets\WF\APIExpansion\EditorUtility\ReadOnlyAttribute.cs" />
     <Compile Include="Assets\WF\APIExpansion\Extensions\ColorExtensions.cs" />
+    <Compile Include="Assets\WF\APIExpansion\Common\ExecutionControl\DoOnce.cs" />
     <Compile Include="Assets\WF\APIExpansion\Extensions\MathExtensions.cs" />
     <Compile Include="Assets\WF\APIExpansion\Extensions\CollectionExtensions.cs" />
   </ItemGroup>
