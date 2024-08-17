@@ -32,6 +32,10 @@ New base class to derive custom components from.
 
 Provides read-only variant of array and dictionay types. Prevents tampering of internal data by means of assigning or updating values via keys or indices.
 
+**TracerList\<T\>:**
+
+ An extension System.Collections.Generic.List of which keeps track of last deleted eleements.
+
 **Reference\<T\>:**
 
 Allows passing any type of data as reference type (encapsulating input type in an object instance).

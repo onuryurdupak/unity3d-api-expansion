@@ -8,6 +8,11 @@ public class Reference<T>
 {
     [ReadOnly][SerializeField] private T value;
 
+    public Reference(T initialValue)
+    {
+        value = initialValue;
+    }
+
     public T Get()
     {
         return value;
