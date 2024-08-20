@@ -43,7 +43,7 @@ public class MonoBehaviourPlus : MonoBehaviour
     /// <param name="condition"></param>
     /// <param name="action"></param>
     /// <returns></returns>
-    protected Coroutine DoWhen(Func<bool> condition, Action action)
+    protected Coroutine DoWhen(Predicate<bool> condition, Action action)
     {
         return StartCoroutine(CheckDoWhen(condition, action));
     }
@@ -92,11 +92,11 @@ public class MonoBehaviourPlus : MonoBehaviour
         }
     }
 
-    private IEnumerator CheckDoWhen(Func<bool> condition, Action action)
+    private IEnumerator CheckDoWhen(Predicate<bool> condition, Action action)
     {
         while (true)
         {
-            bool result = condition.Invoke();
+            bool result = condition.Invoke(true);
 
             if (result)
             {
