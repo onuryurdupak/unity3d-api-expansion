@@ -32,7 +32,7 @@ public static class PhysicsExtensions
     /// <returns></returns>
     public static Vector3 AddZ(this Vector3 input, float amount)
     {
-        return new Vector3(input.x + amount, input.y, input.z + amount);
+        return new Vector3(input.x, input.y, input.z + amount);
     }
 
     /// <summary>
@@ -141,7 +141,7 @@ public static class PhysicsExtensions
     }
 
     /// <summary>
-    /// Limits Y field of a Vector3 to the specified amount.
+    /// Limits X field of a Vector3 to the specified amount.
     /// </summary>
     /// <param name="input"></param>
     /// <param name="max"></param>
@@ -264,13 +264,15 @@ public static class PhysicsExtensions
     }
 
     /// <summary>
-    /// Moves a Rigidbody towards a target position in the horizontal plane (XZ) by a specified amount.
+    /// Moves a Rigidbody forward (in its current facing direction) by a specified amount,
+    /// clamped so it does not travel past its current distance to a target position in the
+    /// horizontal plane (XZ). Returns true once that distance has been closed.
     /// </summary>
     /// <param name="rb"></param>
     /// <param name="target"></param>
     /// <param name="amount"></param>
     /// <returns></returns>
-    public static bool MoveTowards(this Rigidbody rb, Vector3 target, float amount)
+    public static bool MoveUntilNear(this Rigidbody rb, Vector3 target, float amount)
     {
         Vector3 currentTopDownPos = new(rb.position.x, 0, rb.position.z);
         Vector3 worldTopDownPos = new(target.x, 0, target.z);
