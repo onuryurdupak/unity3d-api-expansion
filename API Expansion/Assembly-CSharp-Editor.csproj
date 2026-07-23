@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets/WF/APIExpansion/Editor/ReadOnlyDrawer.cs" />
     <Compile Include="Assets/WF/APIExpansion/Editor/RangeDrawer.cs" />
+    <Compile Include="Assets/WF/APIExpansion/Editor/TransformEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
