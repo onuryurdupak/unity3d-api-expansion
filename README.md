@@ -22,6 +22,10 @@ Observe a value or a list, and get notified on every change. See `Reactive<T>`, 
 
 A `List<T>` that remembers the last item removed from it.
 
+**RollingStack<T>**
+
+A capacity-bounded stack that evicts its oldest entry once full, instead of rejecting new pushes.
+
 
 **Transform reset buttons**
 

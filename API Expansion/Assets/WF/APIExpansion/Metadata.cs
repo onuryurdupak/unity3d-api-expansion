@@ -2,6 +2,6 @@
 {
     public static class Metedata
     {
-        public const string Version = "0.6.0";
+        public const string Version = "0.6.1";
     }
 }

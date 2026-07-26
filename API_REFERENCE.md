@@ -85,6 +85,32 @@ A `List<T>` that keeps track of the last element removed from it.
 
 `public void Clear()`
 
+### RollingStack\<T\>
+
+A capacity-bounded, LIFO stack. Once `Capacity` is reached, pushing evicts the oldest entry instead of throwing or rejecting the push.
+
+`public RollingStack(int cap)`
+
+`public int Count { get; }`
+
+`public int Capacity { get; }`
+
+`public void Push(T value)`
+
+`public T Pop()`
+
+`public T Peek()`
+
+`public bool TryPop(out T result)`
+
+`public bool TryPeek(out T result)`
+
+`public bool Contains(T item)`
+
+`public void Clear()`
+
+`public T[] ToArray()`: Newest entry first. Enumeration order (`foreach`) matches.
+
 ---
 
 ## Common/ExecutionControl
